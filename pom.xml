@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>org.example</groupId>
+    <artifactId>sba-client-demo-apps</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>sba-server</module>
+        <module>0-servlet-app-without-contextpath</module>
+        <module>1-servlet-app-without-contextpath-with-admincontextpath</module>
+        <module>2-servlet-app-with-contextpath</module>
+        <module>3-servlet-app-with-contextpath-with-admincontextpath</module>
+        <module>4-webflux-app-without-contextpath</module>
+        <module>5-webflux-app-without-contextpath-with-admincontextpath</module>
+        <module>6-webflux-app-with-contextpath</module>
+        <module>7-webflux-app-with-contextpath-with-admincontextpath</module>
+    </modules>
+
+    <properties>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+</project>

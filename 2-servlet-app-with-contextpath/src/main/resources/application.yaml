@@ -1,0 +1,16 @@
+server:
+  port: 8200
+  servlet:
+    context-path: /myContextPath
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+spring:
+  boot:
+    admin:
+      client:
+        url: http://localhost:8080
+  application:
+    name: Servlet app with contextpath

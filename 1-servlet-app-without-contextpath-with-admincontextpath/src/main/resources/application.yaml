@@ -1,0 +1,17 @@
+server:
+  port: 8101
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  server:
+    base-path: /management #requires port
+    port: 9101
+spring:
+  boot:
+    admin:
+      client:
+        url: http://localhost:8080
+  application:
+    name: Servlet app without contextpath with admincontextpath

@@ -1,0 +1,19 @@
+server:
+  port: 8401
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  server:
+    base-path: /management #requires port
+    port: 9401
+spring:
+  boot:
+    admin:
+      client:
+        url: http://localhost:8080
+  application:
+    name: Webflux app with contextpath and admincontextpath
+  webflux:
+    base-path: /myContextPath
